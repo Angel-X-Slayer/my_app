@@ -1,9 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
+import { Component } from 'react';
+import Greet from './components/Greet_functional';
 
-function App() {
+
+import Greet1 from './components/greet_class';  /*give the name in Capital*/
+
+// function App() {
+  class App extends Component{
+    render(){
   return (
     <div className="App">
+      <Greet />
+      <Greet1 />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -21,5 +30,6 @@ function App() {
     </div>
   );
 }
+  }
 
 export default App;
